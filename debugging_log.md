@@ -9,7 +9,6 @@ Identificamos la cadena `MAGIC: fcfm-team2-pac` y nos dirigimos a su dirección 
 
 <img width="867" height="631" alt="image1" src="https://github.com/user-attachments/assets/2ad4b6fa-7342-428e-8848-3c5f9b855794" />
 
-**
 
 ## 2. Configuración de Watchpoint (Hardware Breakpoint)
 Para monitorear el acceso a la carga útil (*payload*), localizamos la dirección de memoria donde se almacena el string `"Payload de prueba:\n"` en la sección `.rdata`. 
@@ -18,7 +17,6 @@ Hicimos clic derecho sobre el primer byte en la ventana del *Dump* y seleccionam
 
 <img width="975" height="715" alt="image2" src="https://github.com/user-attachments/assets/d23c7729-a069-4d95-b986-b506f58dcd99" />
 
-**
 
 ## 3. Ejecución Paso a Paso (Stepping)
 Utilizamos la instrucción **Step Over (F8)** para recorrer el flujo del programa. Observamos el siguiente comportamiento secuencial:
@@ -28,7 +26,6 @@ Utilizamos la instrucción **Step Over (F8)** para recorrer el flujo del program
 
 <img width="975" height="705" alt="image3" src="https://github.com/user-attachments/assets/ed111527-a243-48ff-8207-39f3064eb787" />
 
-**
 
 ## 4. Documentación de Cambios en Registros y Memoria
 Durante el análisis, documentamos los siguientes cambios críticos en el estado de la CPU:
