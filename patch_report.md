@@ -56,7 +56,7 @@ Utilizando la interfaz de **Cutter**, se procedió a invertir la lógica del pro
 
 ---
 
-## 5. Comparación de Comportamiento (Dinámico)
+## 5. Comparación de Comportamiento 
 El *patching* permitió evadir la restricción lógica original del binario analizado.
 
 * **Comportamiento Original:** El programa detectaba una falla en la interacción con el sistema de archivos y terminaba el proceso.
