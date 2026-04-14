@@ -1,4 +1,4 @@
-# Notas de Ingeniería Inversa (Ghidra)
+# Notas de Ingeniería Inversa 
 
 **Equipo:** 2
 **Binario analizado:** `team02_sample.exe`
@@ -19,7 +19,7 @@
 
 
 
-## 2. Reconstrucción de Variables (Stack Frame)
+## 2. Reconstrucción de Variables 
 **Objetivo:** Limpiar el código desensamblado dándole nombres descriptivos a las variables locales que Ghidra detectó de forma genérica[cite: 62].
 
 Al revisar el pseudocódigo en `main`, vimos que Ghidra asignó nombres como `local_10` a las variables en el stack. Haciendo un análisis dinámico mental basado en las APIs de Windows, reconstruimos lo siguiente:
@@ -31,7 +31,7 @@ Al revisar el pseudocódigo en `main`, vimos que Ghidra asignó nombres como `lo
 
 
 ## 3. Análisis del Flujo de Ejecución
-**Objetivo:** Documentar paso a paso qué hace el malware[cite: 63].
+**Objetivo:** Documentar paso a paso qué hace el malware
 
 Revisando el código en C ya limpio, el flujo de ataque es una secuencia bastante lineal:
 
