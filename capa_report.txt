@@ -1,0 +1,42 @@
+┌─────────────┬────────────────────────────────────────────────────────────────────────────────────┐
+│ md5         │ 2547ddbe513f78968118ea676f8b5b92                                                   │
+│ sha1        │ 82ad8571569017e58e1adbed5f4b8beabbfd35ad                                           │
+│ sha256      │ 03983e66c1570b51ee197d0a3a05ee258fd28a1504a9b10116409168c525cd87                   │
+│ analysis    │ static                                                                             │
+│ os          │ windows                                                                            │
+│ format      │ pe                                                                                 │
+│ arch        │ amd64                                                                              │
+│ path        │ C:/Users/JMCM/Documents/team02_sample.exe                                          │
+└─────────────┴────────────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────┬──────────────────────────────────────────────────┐
+│ ATT&CK Tactic                                 │ ATT&CK Technique                                 │
+├───────────────────────────────────────────────┼──────────────────────────────────────────────────┤
+│ EXECUTION                                     │ Shared Modules [T1129]                           │
+└───────────────────────────────────────────────┴──────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────────┬──────────────────────────────────┐
+│ MAEC Category                                                 │ MAEC Value                       │
+├───────────────────────────────────────────────────────────────┼──────────────────────────────────┤
+│ malware-category                                              │ launcher                         │
+└───────────────────────────────────────────────────────────────┴──────────────────────────────────┘
+┌──────────────────────────────┬───────────────────────────────────────────────────────────────────┐
+│ MBC Objective                │ MBC Behavior                                                      │
+├──────────────────────────────┼───────────────────────────────────────────────────────────────────┤
+│ DISCOVERY                    │ Code Discovery::Enumerate PE Sections [B0046.001]                 │
+│ FILE SYSTEM                  │ Writes File [C0052]                                               │
+│ MEMORY                       │ Allocate Memory [C0007]                                           │
+│ PROCESS                      │ Create Process [C0017]                                            │
+│                              │ Terminate Process [C0018]                                         │
+└──────────────────────────────┴───────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────┬──────────────────────────────────────────┐
+│ Capability                                            │ Namespace                                │
+├───────────────────────────────────────────────────────┼──────────────────────────────────────────┤
+│ contain a thread local storage (.tls) section         │ executable/pe/section/tls                │
+│ write file on Windows                                 │ host-interaction/file-system/write       │
+│ get thread local storage value                        │ host-interaction/process                 │
+│ create process on Windows                             │ host-interaction/process/create          │
+│ allocate or change RWX memory                         │ host-interaction/process/inject          │
+│ terminate process                                     │ host-interaction/process/terminate       │
+│ enumerate PE sections (4 matches)                     │ load-code/pe                             │
+│ parse PE header (9 matches)                           │ load-code/pe                             │
+└───────────────────────────────────────────────────────┴──────────────────────────────────────────┘
+
