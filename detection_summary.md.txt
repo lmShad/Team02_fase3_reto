@@ -12,7 +12,7 @@
 ### Regla utilizada: `team2_rule.yar`
 
 ### Resultado del escaneo:
-✅ **MATCH:** El binario es detectado por la regla YARA
+**MATCH:** El binario es detectado por la regla YARA
 
 ### Indicadores que activaron la regla:
 
