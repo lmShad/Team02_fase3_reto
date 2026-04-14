@@ -4,11 +4,11 @@ Bienvenidos al repositorio del **Equipo 2** para la Fase 3 del reto de la materi
 
 Este repositorio contiene un binario de carácter **estrictamente educativo**, diseñado específicamente para simular el comportamiento de un "Dropper" básico, con el único fin de ser analizado utilizando técnicas de ingeniería inversa estática y dinámica.
 
-> ⚠️ **Aviso de Seguridad:** El archivo `team02_sample.exe` contenido en este repositorio **no es un malware real**. Su payload inyecta texto inofensivo en un archivo temporal. Sin embargo, debido a las técnicas de evasión simuladas y llamadas a la API de Windows, puede ser detectado por herramientas de seguridad (antivirus). **Se recomienda su análisis exclusivo en entornos controlados (Máquinas Virtuales).**
+>  **Aviso de Seguridad:** El archivo `team02_sample.exe` contenido en este repositorio **no es un malware real**. Su payload inyecta texto inofensivo en un archivo temporal. Sin embargo, debido a las técnicas de evasión simuladas y llamadas a la API de Windows, puede ser detectado por herramientas de seguridad (antivirus). **Se recomienda su análisis exclusivo en entornos controlados (Máquinas Virtuales).**
 
 ---
 
-## 🛠️ Estructura del Proyecto y Asignación de Tareas
+##  Estructura del Proyecto y Asignación de Tareas
 
 A continuación, se detalla la aportación de cada miembro del equipo y el archivo correspondiente a su tarea:
 
@@ -24,7 +24,7 @@ A continuación, se detalla la aportación de cada miembro del equipo y el archi
 
 ---
 
-## 🚀 Cómo ejecutar el análisis
+##  Cómo ejecutar el análisis
 
 1. **Clonar o descargar:** Descarga este repositorio en formato `.ZIP` dentro de una máquina virtual limpia.
 2. **Desactivar protecciones:** Asegúrate de pausar Windows Defender en la VM antes de descomprimir para evitar que bloquee el análisis de la firma YARA.
