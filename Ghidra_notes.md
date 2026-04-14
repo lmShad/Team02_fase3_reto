@@ -5,7 +5,7 @@
 **Herramienta:** Ghidra (CodeBrowser)
 
 ## 1. Localización de la Función Principal
-**Objetivo:** Identificar el punto exacto donde empieza nuestro código, saltándonos toda la "basura" de inicialización (CRT Startup) que inyecta el compilador[cite: 61].
+**Objetivo:** Identificar el punto exacto donde empieza nuestro código, saltándonos toda la "basura" de inicialización (CRT Startup) que inyecta el compilador.
 
 * **Punto de entrada inicial:** Comenzamos el análisis en la función genérica `entry`.
 * **Proceso de aislamiento:** Fuimos bajando por el código de inicialización de C/C++  hasta encontrar la subrutina que recibe los parámetros clásicos del sistema (`argc`, `argv`, `envp`).
