@@ -19,15 +19,22 @@
 
 
 
-## 2. Reconstrucción de Variables 
-**Objetivo:** Limpiar el código desensamblado dándole nombres descriptivos a las variables locales que Ghidra detectó de forma genérica.
+##  2. Reconstrucción de Estructura de Datos (Data Type Manager)
+**Objetivo:** Agrupar variables relacionadas en memoria para demostrar el dominio de la abstracción de datos y mejorar la semántica del código.
 
-Al revisar el pseudocódigo en `main`, vimos que Ghidra asignó nombres como `local_10` a las variables en el stack. Haciendo un análisis dinámico mental basado en las APIs de Windows, reconstruimos lo siguiente:
+Siguiendo los requisitos de la Fase 3, se realizó una reconstrucción lógica mediante la creación de un tipo de dato compuesto en el **Data Type Manager**. Esta técnica permite organizar los offsets de la pila como una entidad única de control.
 
-* `local_10` (Tipo: `HANDLE`): La renombramos a `hFile`. Es la variable que guarda el puntero que devuelve `CreateFileA`.
-* `local_1c` (Tipo: `DWORD`): La renombramos a `bytesWritten`. Es el parámetro que se pasa por referencia a `WriteFile` para confirmar cuántos bytes se escribieron realmente.
+* **Nombre de la estructura:** `PayloadConfig`
+  <img width="1496" height="664" alt="Captura de pantalla 2026-04-13 223402" src="https://github.com/user-attachments/assets/bf2fbfe4-064e-402e-8115-c6e2ff5e6f42" />
 
-<img width="1699" height="462" alt="Captura de pantalla 2026-04-13 212607" src="https://github.com/user-attachments/assets/991d91c5-1c0e-4e38-80f9-53e4d9de8fd1" />
+* **Campos definidos:**
+  * `HANDLE hFile`: Manejador para la persistencia del archivo.
+  * `DWORD bytesWritten`: Contador de control para la inyección del payload.
+
+Se utilizó la función **Retype Variable** sobre la variable `hFile` en el Stack Frame para aplicar esta estructura, logrando un pseudocódigo mucho más limpio y profesional.
+
+<img width="260" height="135" alt="Captura de pantalla 2026-04-13 224438" src="https://github.com/user-attachments/assets/b1b365ae-4d7a-434f-8dd2-4278634c93f1" />
+
 
 
 ## 3. Análisis del Flujo de Ejecución
