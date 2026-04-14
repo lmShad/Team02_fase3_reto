@@ -1,8 +1,11 @@
 # Resumen de Detección - Equipo 2
 
 **Binario:** `team02_sample.exe`
+
 **Fecha de análisis:** 13 de abril de 2026
+
 **Arquitectura:** amd64 (64 bits)
+
 **SHA256:** `03983e66c1570b51ee197d0a3a05ee258fd28a1504a9b10116409168c525cd87`
 
 ---
