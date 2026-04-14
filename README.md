@@ -17,9 +17,9 @@ A continuación, se detalla la aportación de cada miembro del equipo y el archi
 | **1. Desarrollo del Malware** | Jonathan Jacobo | `team02_sample.cpp` / `.exe` | Código fuente en C++ y binario ejecutable (Dropper simulado). |
 | **2. Análisis Estático Base** | Jonathan Jacobo | `static_overview.md` | Identificación de strings e imports usando `rabin2`. |
 | **3. Análisis con Ghidra** | Juan Fernandez | `ghidra_notes.md` | Reconstrucción de la estructura de memoria y de compilación. |
-| **4. Patching con Radare2/Cutter**| Brandon Flores | `patch_report.md` / `_patched.exe` | Alteración de los saltos condicionales (JMP/JNE) para evadir el payload. |
+| **4. Patching con Radare2/Cutter**| Brandon Flores | `patch_report.md` / `team02_sample_patched.exe` | Alteración de los saltos condicionales (JMP/JNE) para evadir el payload. |
 | **5. Análisis Dinámico (x64dbg)**| Brandon Flores | `debugging_log.md` | Monitoreo en memoria de la creación de archivos. |
-| **6. Detección (YARA & CAPA)** | Jose Castellanos | `team_rule.yar` / `capa_report.txt` | Regla YARA estructurada y resumen de las capacidades del archivo. |
+| **6. Detección (YARA & CAPA)** | Jose Castellanos | `team2_rule.yar` / `capa_report.txt` / `detection_summary.md.txt` | Regla YARA estructurada y resumen de las capacidades del archivo. |
 | **7. Informe Final Integrado** | Jose Castellanos | `team_report.pdf` | Documento unificado con la metodología y conclusiones del equipo. |
 
 ---
