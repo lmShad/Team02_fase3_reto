@@ -1,4 +1,4 @@
-#  Reto Fase 3: Análisis de Malware Simulado (Equipo 2)
+#  Reto Fase 3: Análisis Forense Completo de un Binario (Equipo 2)
 
 Bienvenidos al repositorio del **Equipo 2** para la Fase 3 del reto de la materia de Programacion Avanzada para Ciberseguridad  (FCFM, UANL). 
 
