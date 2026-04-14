@@ -20,7 +20,7 @@
 
 
 ## 2. Reconstrucción de Variables 
-**Objetivo:** Limpiar el código desensamblado dándole nombres descriptivos a las variables locales que Ghidra detectó de forma genérica[cite: 62].
+**Objetivo:** Limpiar el código desensamblado dándole nombres descriptivos a las variables locales que Ghidra detectó de forma genérica.
 
 Al revisar el pseudocódigo en `main`, vimos que Ghidra asignó nombres como `local_10` a las variables en el stack. Haciendo un análisis dinámico mental basado en las APIs de Windows, reconstruimos lo siguiente:
 
