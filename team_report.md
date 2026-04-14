@@ -2,9 +2,13 @@
 
 **Equipo:** 2 - FCFM  
 **Integrantes:**
+
 	José Miguel Castellanos Martínez
+	
 	Jonathan Emir Jacobo Martínez
+	
 	Brandon Yahir Flores Garcia
+	
 	Juan Carlos Fernández Flores
 	
 **Fecha:** 13 de abril de 2026  
